@@ -1,0 +1,17 @@
+version: "3.2"
+
+services:
+  upload-microservice:
+    image: upload-microservice:latest
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      args:
+        npm_install_args: install --production
+    ports:
+      - "3035:3035"
+    volumes:
+      - "local_data:/usr/src/app/local"
+
+volumes:
+  local_data:

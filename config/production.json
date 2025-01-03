@@ -1,0 +1,27 @@
+{
+  "host": "0.0.0.0",
+  "port": "PORT",
+  "JWTSecret": "JWT_SECRET",
+  "JWTDisable": "DISABLE_AUTH",
+  "uploadMimes": "UPLOAD_MIME_TYPES",
+  "aws": {
+    "accessKeyId": "AWS_ACCESS_KEY_ID",
+    "secretAccessKey": "AWS_SECRET_ACCESS_KEY",
+    "region": "AWS_REGION",
+    "bucketName": "AWS_BUCKET_NAME"
+  },
+  "cloudinary": {
+    "cloud_name": "CLD_CLOUD_NAME",
+    "api_key": "CLD_API_KEY",
+    "api_secret": "CLD_API_SECRET"
+  },
+  "local": {
+    "files_path": "local/files",
+    "files_baseurl": "LOCAL_FILES_BASEURL",
+    "files_temp" : "local/temp"
+  },
+  "db": {
+    "driver": "sqlite",
+    "db_storage": "local/db.sqlt"
+  }
+}

@@ -1,0 +1,11 @@
+node_modules
+.git
+_build
+.editorconfig
+.eslintrc.json
+.gitignore
+.npmignore
+build.sh
+dokcer-compose.yml
+Dockerfile
+release.sh

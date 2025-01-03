@@ -1,0 +1,16 @@
+version: "3.2"
+
+services:
+  upload-microservice:
+    image: upload-microservice:dev
+    build:
+      args:
+        npm_install_args: install --verbose
+    environment:
+      - DEBUG=app*
+      - JWT_SECRET=thatsmysecret
+    volumes:
+      - "./src:/usr/src/app/src"
+      - "./test:/usr/src/app/test"
+      - "./config:/usr/src/app/config"
+      - "./local:/usr/src/app/local"
